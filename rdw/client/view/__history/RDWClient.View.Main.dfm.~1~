@@ -1,0 +1,87 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'RDW Client - 6 Delphi Inga'
+  ClientHeight = 299
+  ClientWidth = 635
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Button1: TButton
+    Left = 176
+    Top = 40
+    Width = 241
+    Height = 25
+    Caption = 'Start Async Event'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object RESTClientPooler1: TRESTClientPooler
+    DataCompression = True
+    Encoding = esUtf8
+    hEncodeStrings = True
+    Host = 'localhost'
+    UserName = 'testserver'
+    Password = 'testserver'
+    ProxyOptions.BasicAuthentication = False
+    ProxyOptions.ProxyPort = 0
+    RequestTimeOut = 10000
+    ThreadRequest = False
+    AllowCookies = False
+    HandleRedirects = False
+    FailOver = False
+    FailOverConnections = <>
+    FailOverReplaceDefaults = False
+    CriptOptions.Use = False
+    CriptOptions.Key = 'RDWBASEKEY256'
+    Left = 56
+    Top = 17
+  end
+  object DWClientEvents1: TDWClientEvents
+    ServerEventName = 'TDataModule1.DWServerEvents1'
+    CriptOptions.Use = False
+    CriptOptions.Key = 'RDWBASEKEY256'
+    RESTClientPooler = RESTClientPooler1
+    Events = <
+      item
+        Routes = [crAll]
+        DWParams = <
+          item
+            TypeObject = toParam
+            ObjectDirection = odOUT
+            ObjectValue = ovString
+            ParamName = 'result'
+            Encoded = True
+          end>
+        JsonMode = jmDataware
+        Name = 'test'
+      end
+      item
+        Routes = [crAll]
+        DWParams = <
+          item
+            TypeObject = toParam
+            ObjectDirection = odOUT
+            ObjectValue = ovString
+            ParamName = 'result'
+            Encoded = True
+          end>
+        JsonMode = jmPureJSON
+        Name = 'testPureJSON'
+      end
+      item
+        Routes = [crAll]
+        DWParams = <>
+        JsonMode = jmDataware
+        Name = 'assyncevent'
+      end>
+    Left = 56
+    Top = 80
+  end
+end

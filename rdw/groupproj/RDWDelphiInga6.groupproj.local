@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/10/03 22:44:19.000.890,D:\asa\src\project\ProjectGroup1.groupproj=D:\asa\src\rdw\groupproj\RDWDelphiInga6.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="D:\GitHub\RDWDelphiInga6\rdw\client\project\RDWClient.dproj"/>
+	</Default.Personality>
+</BorlandProject>

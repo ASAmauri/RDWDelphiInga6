@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{FA3C4F10-8C81-4285-8494-A17920B7E104}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\server\project\RDWServer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\client\project\RDWClient.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="RDWServer">
+        <MSBuild Projects="..\server\project\RDWServer.dproj"/>
+    </Target>
+    <Target Name="RDWServer:Clean">
+        <MSBuild Projects="..\server\project\RDWServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RDWServer:Make">
+        <MSBuild Projects="..\server\project\RDWServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RDWClient">
+        <MSBuild Projects="..\client\project\RDWClient.dproj"/>
+    </Target>
+    <Target Name="RDWClient:Clean">
+        <MSBuild Projects="..\client\project\RDWClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RDWClient:Make">
+        <MSBuild Projects="..\client\project\RDWClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="RDWServer;RDWClient"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="RDWServer:Clean;RDWClient:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="RDWServer:Make;RDWClient:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
