@@ -4,9 +4,7 @@ RDW 6º Delphi Ingá -  Fonte da Palestra sobre RDW e eventos assíncronos
 Steps:
 
 1 - Criar um Projeto VCL
-
 1.1 - RESTServicePooler
-
 1.1.1 - PORT
 
 1.1.2 - ServerParams
