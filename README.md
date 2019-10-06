@@ -47,3 +47,11 @@ Para proceder os testes é possível utilizar o POSTMAN.
 Podes acessar um exemplo de test no link abaixo:
 
 https://documenter.getpostman.com/view/632510/SVtR3r5y
+
+
+
+RDWClient - Passo a passo para se criar o servidor de eventos:
+
+Os fontes são muito simples e estão funcionando. :-)))
+
+Em breve o passo a passo...
