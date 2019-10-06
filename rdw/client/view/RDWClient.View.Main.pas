@@ -16,6 +16,7 @@ type
     DWClientEvents1: TDWClientEvents;
     Button1: TButton;
     Image1: TImage;
+    Label2: TLabel;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }

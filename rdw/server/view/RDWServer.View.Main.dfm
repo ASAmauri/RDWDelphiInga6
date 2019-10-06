@@ -1280,9 +1280,9 @@ object Form1: TForm1
   end
   object Label1: TLabel
     Left = 32
-    Top = 272
+    Top = 262
     Width = 449
-    Height = 57
+    Height = 53
     Alignment = taCenter
     AutoSize = False
     Caption = 'Distribua-se'
@@ -1290,6 +1290,21 @@ object Form1: TForm1
     Font.Color = clWindowText
     Font.Height = -40
     Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 32
+    Top = 330
+    Width = 465
+    Height = 23
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'by Amauri dos Santos Alves - ASA'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clMenuHighlight
+    Font.Height = -16
+    Font.Name = 'Calibri'
     Font.Style = []
     ParentFont = False
   end

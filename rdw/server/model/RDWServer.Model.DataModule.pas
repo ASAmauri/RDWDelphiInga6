@@ -49,6 +49,7 @@ begin
         JSon.AddPair('Evento','6 Delphi Inga');
         JSon.AddPair('Local','Sabium Sistemas');
         JSon.AddPair('Tema','RDW RestDataWare - Distribua-se!');
+        JSon.AddPair('Palestrante','Amauri dos Santos Alves -  ASA!');
 
         vstringtime.Add(Json.ToJSON);
 
@@ -76,6 +77,7 @@ begin
       JSon.AddPair('Evento','6 Delphi Inga');
       JSon.AddPair('Local','Sabium Sistemas');
       JSon.AddPair('Tema','RDW RestDataWare - Distribua-se!');
+      JSon.AddPair('Palestrante','Amauri dos Santos Alves -  ASA!');
       Result := Json.ToJSON;
    finally
      FreeAndNil(Json);
@@ -87,7 +89,7 @@ procedure TDataModule1.DWServerEvents1EventstestReplyEvent(
   var Params: TDWParams; var Result: string);
 begin
 
-  Params.ItemsString['result'].AsString := 'RDW no 6º Delphi Ingá - Delphi!'
+  Params.ItemsString['result'].AsString := 'RDW no 6º Delphi Ingá - Delphi! by ASA!'
 
 end;
 

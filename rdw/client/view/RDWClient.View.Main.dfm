@@ -1278,6 +1278,21 @@ object Form1: TForm1
     Stretch = True
     Transparent = True
   end
+  object Label2: TLabel
+    Left = 56
+    Top = 210
+    Width = 465
+    Height = 23
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'by Amauri dos Santos Alves - ASA'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clMenuHighlight
+    Font.Height = -16
+    Font.Name = 'Calibri'
+    Font.Style = []
+    ParentFont = False
+  end
   object Button1: TButton
     Left = 168
     Top = 144

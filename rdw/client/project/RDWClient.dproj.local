@@ -2,8 +2,8 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2019/09/30 17:06:52.000.145,=D:\asa\src\project\Unit1.pas</Transaction>
-    <Transaction>2019/09/30 17:14:45.000.324,D:\asa\src\rdw\client\view\RDWClient.View.Main.dfm=D:\asa\src\project\Unit1.dfm</Transaction>
-    <Transaction>2019/09/30 17:14:45.000.324,D:\asa\src\rdw\client\view\RDWClient.View.Main.pas=D:\asa\src\project\Unit1.pas</Transaction>
-    <Transaction>2019/09/30 17:15:05.000.417,D:\asa\src\rdw\client\project\RDWClient.dproj=D:\asa\src\project\Project1.dproj</Transaction>
+    <Transaction>2019/09/30 17:14:45.000.324,D:\asa\src\project\Unit1.pas=D:\asa\src\rdw\client\view\RDWClient.View.Main.pas</Transaction>
+    <Transaction>2019/09/30 17:14:45.000.324,D:\asa\src\project\Unit1.dfm=D:\asa\src\rdw\client\view\RDWClient.View.Main.dfm</Transaction>
+    <Transaction>2019/09/30 17:15:05.000.417,D:\asa\src\project\Project1.dproj=D:\asa\src\rdw\client\project\RDWClient.dproj</Transaction>
   </Transactions>
 </BorlandProject>
