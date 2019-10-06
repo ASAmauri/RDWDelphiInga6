@@ -32,11 +32,18 @@ RDWServer - Passo a passo para se criar o servidor de eventos:
 
 1.4 - TDWServerEvents
 
-1.4.1 - Criar evento : test
+1.4.1 - Criar o evento "test"
 
-1.4.1.1 - Criar parametro : result
+1.4.1.1 - no evento "test", criar o parametro "result" do tipo out
 
-1.4.1.2 - no evento test, em OnReplay :	Params.Items['result'].AsString := 'RDW no 6 Delphi Inga'
+1.4.1.2 - no evento "test", no OnReplayEvent, escrever Params.Items['result'].AsString := 'RDW no 6 Delphi Inga'
 			
-			
+
+
+POSTMAN 
+
+Para proceder os testes é possível utilizar o POSTMAN.
+
+Podes acessar um exemplo de test no link abaixo:
+
 https://documenter.getpostman.com/view/632510/SVtR3r5y
