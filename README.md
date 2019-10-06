@@ -22,13 +22,13 @@ RDWServer - Passo a passo para se criar o servidor de eventos:
   else
     Button1.Caption := 'Start';
 
-1.3 - DataModule
+1.3 - DataModule - criar um novo DataModule
 
-1.3.1 - TServerMethodDataModule
+1.3.1 - Uses uDWDataModule;
 
-1.3.2 - Uses uDWDataModule;
+1.3.2 - Mudar no Type de Class(TDataModule) para Class(TServerMethodDataModule)
 
-1.3.4 - Button.OnClick -> RESTServicePooler.ServerMethodClass := TDataModule1;
+1.3.4 - No formulario principal no Button.OnClick mudar de nil para RESTServicePooler.ServerMethodClass := TDataModule1;
 
 1.4 - TDWServerEvents
 
