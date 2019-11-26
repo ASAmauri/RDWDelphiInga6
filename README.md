@@ -50,7 +50,7 @@ https://documenter.getpostman.com/view/632510/SVtR3r5y
 
 
 
-RDWClient - Passo a passo para se criar o servidor de eventos:
+RDWClient Events - Passo a passo para se criar o servidor de eventos:
 
 Os fontes são muito simples e estão funcionando. :-)))
 
